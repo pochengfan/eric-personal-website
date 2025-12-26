@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #2563eb;
+  --muted: #6b7280;
+}
+
+html { scroll-behavior: smooth; }
+
+.skill-bar { background: linear-gradient(90deg, var(--accent), #7c3aed 60%); height: 100%; border-radius: 9999px; }
+
+.card { @apply bg-white dark:bg-gray-800 rounded-lg shadow-sm p-5; }
+
+.outline-focus:focus { outline: 2px solid rgba(37,99,235,0.2); outline-offset: 2px; }
+
+.profile-img { @apply w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-2 border-gray-200 dark:border-gray-700; }
